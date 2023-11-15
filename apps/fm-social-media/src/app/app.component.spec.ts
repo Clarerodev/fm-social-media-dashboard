@@ -15,13 +15,13 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome fm-social-media-monorepo'
+      'Welcome fm-social-media'
     );
   });
 
-  it(`should have as title 'fm-social-media-monorepo'`, () => {
+  it(`should have as title 'fm-social-media'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('fm-social-media-monorepo');
+    expect(app.title).toEqual('fm-social-media');
   });
 });

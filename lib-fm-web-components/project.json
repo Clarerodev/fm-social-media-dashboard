@@ -1,0 +1,27 @@
+{
+  "name": "lib-fm-web-components",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "lib-fm-web-components/src",
+  "prefix": "fm-social-media-monorepo",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "lib-fm-web-components/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "lib-fm-web-components/**/*.ts",
+          "lib-fm-web-components/**/*.html"
+        ]
+      }
+    }
+  }
+}

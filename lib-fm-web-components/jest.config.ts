@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'fm-social-media-monorepo',
-  preset: '../../jest.preset.js',
+  displayName: 'lib-fm-web-components',
+  preset: '../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/fm-social-media-monorepo',
+  coverageDirectory: '../coverage/lib-fm-web-components',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

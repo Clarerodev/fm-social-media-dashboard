@@ -1,26 +1,26 @@
 {
-  "name": "fm-social-media-monorepo",
+  "name": "fm-social-media",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "fm-social-media-monorepo",
-  "sourceRoot": "apps/fm-social-media-monorepo/src",
+  "sourceRoot": "apps/fm-social-media/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/fm-social-media-monorepo",
-        "index": "apps/fm-social-media-monorepo/src/index.html",
-        "main": "apps/fm-social-media-monorepo/src/main.ts",
+        "outputPath": "dist/apps/fm-social-media",
+        "index": "apps/fm-social-media/src/index.html",
+        "main": "apps/fm-social-media/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/fm-social-media-monorepo/tsconfig.app.json",
-        "inlineStyleLanguage": "scss",
+        "tsConfig": "apps/fm-social-media/tsconfig.app.json",
+        "inlineStyleLanguage": "sass",
         "assets": [
-          "apps/fm-social-media-monorepo/src/favicon.ico",
-          "apps/fm-social-media-monorepo/src/assets"
+          "apps/fm-social-media/src/favicon.ico",
+          "apps/fm-social-media/src/assets"
         ],
-        "styles": ["apps/fm-social-media-monorepo/src/styles.scss"],
+        "styles": ["apps/fm-social-media/src/styles.sass"],
         "scripts": []
       },
       "configurations": {
@@ -54,10 +54,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "fm-social-media-monorepo:build:production"
+          "buildTarget": "fm-social-media:build:production"
         },
         "development": {
-          "buildTarget": "fm-social-media-monorepo:build:development"
+          "buildTarget": "fm-social-media:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -65,7 +65,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "fm-social-media-monorepo:build"
+        "buildTarget": "fm-social-media:build"
       }
     },
     "lint": {
@@ -73,8 +73,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "apps/fm-social-media-monorepo/**/*.ts",
-          "apps/fm-social-media-monorepo/**/*.html"
+          "apps/fm-social-media/**/*.ts",
+          "apps/fm-social-media/**/*.html"
         ]
       }
     },
@@ -82,7 +82,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/fm-social-media-monorepo/jest.config.ts"
+        "jestConfig": "apps/fm-social-media/jest.config.ts"
       }
     }
   }
