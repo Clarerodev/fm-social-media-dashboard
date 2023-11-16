@@ -1,9 +1,17 @@
 import { CommonModule } from "@angular/common";
-import { NgModule } from "@angular/core";
-import { FmSocialMediaFollowersComponent } from "./components/fm-social-media-followers/fm-social-media-followers.component";
-import { FmSocialMediaViewsComponent } from "./components/fm-social-media-views/fm-social-media-views.component";
+import { APP_INITIALIZER, NgModule } from "@angular/core";
+import { defineCustomElements }   from '@clarerodev/fm-web-components/loader';
+
+defineCustomElements(window);
 @NgModule({
-    imports: [CommonModule, FmSocialMediaFollowersComponent, FmSocialMediaViewsComponent],
-    exports: [FmSocialMediaFollowersComponent, FmSocialMediaViewsComponent]
+    imports: [CommonModule],
+    exports: [],
+    providers: [
+        {
+            provide: APP_INITIALIZER,
+            useFactory: () => defineCustomElements,
+            multi: true
+        },
+    ]
 })
 export class FmWebComponentsModule { }

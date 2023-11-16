@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'fm-social-media-followers',
+  selector: 'fm-social-media-followers-lib',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './fm-social-media-followers.component.html',
