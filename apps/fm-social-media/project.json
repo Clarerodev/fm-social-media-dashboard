@@ -20,9 +20,13 @@
           {
             "glob": "**/*",
             "input": "./node_modules/@clarerodev/fm-web-components/dist/components/assets",
-            "output": "apps/fm-social-media/src/assets"
+            "output": "./assets"
           },
-          "apps/fm-social-media/src/favicon.ico",
+          {
+            "glob": "**/*.ico",
+            "input": "apps/fm-social-media/src",
+            "output": "./assets"
+          },
           "apps/fm-social-media/src/assets"
         ],
         "styles": ["apps/fm-social-media/src/styles.sass"],
