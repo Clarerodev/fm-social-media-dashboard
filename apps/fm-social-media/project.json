@@ -3,7 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "fm-social-media-monorepo",
-  "sourceRoot": "apps/fm-social-media/src",
+  "sourceRoot": "/",
   "tags": [],
   "targets": {
     "build": {
@@ -17,6 +17,11 @@
         "tsConfig": "apps/fm-social-media/tsconfig.app.json",
         "inlineStyleLanguage": "sass",
         "assets": [
+          {
+            "glob": "**/*",
+            "input": "./node_modules/@clarerodev/fm-web-components/dist/components/assets",
+            "output": "apps/fm-social-media/src/assets"
+          },
           "apps/fm-social-media/src/favicon.ico",
           "apps/fm-social-media/src/assets"
         ],
@@ -52,6 +57,29 @@
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "outputPath": "dist/apps/fm-social-media",
+        "index": "apps/fm-social-media/src/index.html",
+        "main": "apps/fm-social-media/src/main.ts",
+        "polyfills": [
+          "zone.js"
+        ],
+        "tsConfig": "apps/fm-social-media/tsconfig.app.json",
+        "inlineStyleLanguage": "sass",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "./node_modules/@clarerodev/fm-web-components/dist/components/assets",
+            "output": "apps/fm-social-media/src/assets"
+          },
+          "apps/fm-social-media/src/favicon.ico",
+          "apps/fm-social-media/src/assets"
+        ],
+        "styles": [
+          "apps/fm-social-media/src/styles.sass"
+        ],
+        "scripts": []
+      },
       "configurations": {
         "production": {
           "buildTarget": "fm-social-media:build:production"

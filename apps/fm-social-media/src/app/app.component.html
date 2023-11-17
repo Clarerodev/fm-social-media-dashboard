@@ -1,2 +1,4 @@
-<fm-social-media-followers></fm-social-media-followers>
+<div>
+    <fm-social-media-followers-lib *ngIf="followerData" [followerData]="followerData.facebook"></fm-social-media-followers-lib>
+</div>
 <router-outlet></router-outlet>
