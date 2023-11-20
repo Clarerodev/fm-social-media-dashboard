@@ -1,0 +1,8 @@
+<div class="fm-switch__container">
+    <label class="fm-switch-theme">{{themeSelected}}</label>
+    <label class="fm-switch">
+        <input class="fm-switch__input" type="checkbox" role="switch" [checked]="elChecked"
+            (change)="onChangeTheme($event)" />
+        <span class="fm-switch__slider"></span>
+    </label>
+</div>

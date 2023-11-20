@@ -10,20 +10,10 @@ import { FollowersComponent } from '../components/followers/followers.component'
   selector: 'fm-social-media-monorepo-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: []
 })
 export class AppComponent {
-  title = 'fm-social-media';
-  public followerData: any;
+  title = 'fm-social-media'
 
-  constructor() {
-    this.generateData();
-  }
-
-  private generateData() {
-    this.followerData =
-      {
-        facebook: { type: 'facebook', userName: 'clarerodev', followerCount: '1987', followerByDay: '23', followerProgress: '25' }
-      }
-  }
+  constructor() {}
 }

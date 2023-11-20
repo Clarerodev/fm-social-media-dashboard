@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FmSwithComponent } from './fm-swith.component';
+import { FmSwithComponent } from './fm-switch.component';
 
 describe('FmSwithComponent', () => {
   let component: FmSwithComponent;

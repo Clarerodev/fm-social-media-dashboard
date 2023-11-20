@@ -15,7 +15,7 @@
         "main": "apps/fm-social-media/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/fm-social-media/tsconfig.app.json",
-        "inlineStyleLanguage": "sass",
+        "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
@@ -29,7 +29,7 @@
           },
           "apps/fm-social-media/src/assets"
         ],
-        "styles": ["apps/fm-social-media/src/styles.sass"],
+        "styles": ["apps/fm-social-media/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
