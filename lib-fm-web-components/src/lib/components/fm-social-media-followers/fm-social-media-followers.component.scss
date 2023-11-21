@@ -1,5 +1,11 @@
- fm-social-media-followers {
+ .dark > fm-social-media-followers {
      --color-social-item: #fff;
      --color-social-item-network: #8C98C6;
      --bg-color-social-item: #252B42;
+ }
+
+ .light > fm-social-media-followers {
+     --color-social-item: #1D1F29;
+     --color-social-item-network: #63687D;
+     --bg-color-social-item: #F1F3FA;
  }

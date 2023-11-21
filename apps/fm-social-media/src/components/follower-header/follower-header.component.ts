@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FmWebComponentsModule } from '@fm-social-media-monorepo/lib-fm-web-components';
 
@@ -10,8 +10,11 @@ import { FmWebComponentsModule } from '@fm-social-media-monorepo/lib-fm-web-comp
   styleUrls: ['./follower-header.component.scss'],
 })
 export class FollowerHeaderComponent {
+  @Output() setThemeEvent: EventEmitter<string> = new EventEmitter();
+  public theme = '';
+
   public setTheme(ev: string) {
-    console.log("setTheme", ev);
-    
+    this.theme = ev;
+    this.setThemeEvent.emit(ev)
   }
 }

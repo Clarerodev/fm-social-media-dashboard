@@ -14,6 +14,11 @@ import { FollowersComponent } from '../components/followers/followers.component'
 })
 export class AppComponent {
   title = 'fm-social-media'
+  public theme = '';
 
-  constructor() {}
+  constructor() { }
+  
+  public setTheme(ev: string) {
+    this.theme = `${ev}`;
+  }
 }

@@ -3,4 +3,8 @@
     padding-right: 165px;
     padding-top: 36px;
     padding-bottom:  75px;
+    height: 100vh;
+}
+.container.dark {
+    background: var(--bg-dark-color-secondary);
 }

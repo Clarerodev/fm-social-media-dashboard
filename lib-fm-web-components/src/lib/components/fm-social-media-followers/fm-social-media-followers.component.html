@@ -1,8 +1,7 @@
-<ng-container>
-    <h2>{{followerData.userName}}</h2>
+<div [ngClass]="theme">
     <fm-social-media-followers  [type]=followerData.type
                                 [userName]=followerData.userName
                                 [followerCount]=followerData.followerCount 
                                 [followerByDay]=followerData.followerByDay>
     </fm-social-media-followers>
-</ng-container>
+</div>

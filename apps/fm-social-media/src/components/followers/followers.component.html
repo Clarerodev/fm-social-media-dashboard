@@ -1,8 +1,6 @@
-<div class="follower-header">
-    <fm-follower-header></fm-follower-header>
+<div class="fm-follower-header">
+    <fm-follower-header (setThemeEvent)="setTheme($event)"></fm-follower-header>
 </div>
-<div class="follower-body">
-    <ng-container>
-        <fm-follower-dashboard></fm-follower-dashboard>
-    </ng-container>
+<div class="fm-follower-body">
+    <fm-follower-dashboard [theme]="theme"></fm-follower-dashboard>
 </div>
