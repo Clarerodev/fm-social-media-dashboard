@@ -7,7 +7,7 @@
 }
 
 .follower-header__switch-container {
-    border-top: 1px solid #848BAB;
+    border-top: 1px solid var(--bg-light-color-border);
     padding-top: 1rem;
     margin-top: 1.5rem;
 
@@ -16,6 +16,6 @@
     }
 
     &.dark {
-        border-color: #333A55;
+        border-color: var(--bg-dark-color-border);
     }
 }
