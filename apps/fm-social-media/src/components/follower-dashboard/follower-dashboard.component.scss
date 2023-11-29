@@ -1,5 +1,14 @@
+
+
 .follower-dashboard {
     display: grid;
-    grid-auto-flow: column;
-    gap: 30px;
+    gap: 1.5rem;
+
+    @media screen and (min-width: (48em)) {
+        grid: auto-flow / 1fr 1fr;
+    }
+
+    @media screen and (min-width: (64em)) {
+        grid: auto-flow / 1fr 1fr 1fr 1fr;
+    }
 }

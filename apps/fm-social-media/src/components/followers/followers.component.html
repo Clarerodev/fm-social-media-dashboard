@@ -1,6 +1,9 @@
 <div class="fm-follower-header">
     <fm-follower-header (setThemeEvent)="setTheme($event)"></fm-follower-header>
 </div>
-<div class="fm-follower-body">
+<div class="fm-follower-count">
     <fm-follower-dashboard [theme]="theme"></fm-follower-dashboard>
+</div>
+<div class="fm-views-count">
+   <fm-views-dashboard [theme]="theme"></fm-views-dashboard>
 </div>

@@ -1,1 +1,7 @@
-<p>follower-views-dashboard works!</p>
+<h2 class="views-title" [ngClass]="theme">Overview - Today</h2>
+<div class="views-dashboard">
+    <div class="views-dashboard--item" *ngFor="let item of viewData">
+        <fm-social-media-views-lib *ngIf="viewData" [followerData]="item" [theme]="theme">
+        </fm-social-media-views-lib>
+    </div>
+</div>
