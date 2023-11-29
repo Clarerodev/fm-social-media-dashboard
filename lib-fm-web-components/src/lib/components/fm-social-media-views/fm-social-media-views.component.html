@@ -1,1 +1,6 @@
-<p>fm-social-media-views works!</p>
+<div [ngClass]="theme">
+    <fm-social-media-views [type]=followerData.type
+                        [likesCount]=followerData.likesCount 
+                        [likesByDay]=followerData.likesByDay>
+    </fm-social-media-views>
+</div>
