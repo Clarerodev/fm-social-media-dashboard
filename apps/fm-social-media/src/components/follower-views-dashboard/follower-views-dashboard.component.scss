@@ -1,6 +1,6 @@
 .views-dashboard {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
 
     @media screen and (min-width: (48em)) {
         grid: auto-flow /repeat(3, 1fr);
