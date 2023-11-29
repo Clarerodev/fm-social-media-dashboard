@@ -3,13 +3,13 @@
     gap: 1rem;
 
     @media screen and (min-width: (48em)) {
-        grid: auto-flow / 1fr 1fr 1fr;
+        grid: auto-flow /repeat(3, 1fr);
     }
     
     @media screen and (min-width: (64em)) {
-        grid: auto-flow / 1fr 1fr 1fr 1fr;
+        grid: auto-flow / repeat(4, 1fr);
     }
 }
 .views-title {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }

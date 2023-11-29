@@ -1,14 +1,12 @@
-
-
 .follower-dashboard {
     display: grid;
     gap: 1.5rem;
 
     @media screen and (min-width: (48em)) {
-        grid: auto-flow / 1fr 1fr;
+        grid: auto-flow / repeat(2, 1fr);
     }
 
     @media screen and (min-width: (64em)) {
-        grid: auto-flow / 1fr 1fr 1fr 1fr;
+        grid: auto-flow / repeat(4, 1fr);
     }
 }

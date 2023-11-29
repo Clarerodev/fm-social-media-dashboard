@@ -19,14 +19,14 @@ export class FollowerViewsDashboardComponent {
 
   private generateData() {
     this.viewData = [
-      { type: 'facebook', likesCount: '87', likesByDay: '3' },
-      { type: 'facebook', likesCount: '52', likesByDay: '-2' },
-      { type: 'instagram', likesCount: '5462', likesByDay: '2257' },
-      { type: 'instagram', likesCount: '52k', likesByDay: '1375' },
-      { type: 'twitter', likesCount: '117', likesByDay: '303' },
-      { type: 'twitter', likesCount: '507', likesByDay: '553' },
-      { type: 'youtube', likesCount: '107', likesByDay: '-19' },
-      { type: 'youtube', likesCount: '1407', likesByDay: '-12' },
+      { type: 'facebook', likesCount: '87', likesByDay: '3', typeCounter: 'Page Views' },
+      { type: 'facebook', likesCount: '52', likesByDay: '-2', typeCounter: 'Likes'},
+      { type: 'instagram', likesCount: '5462', likesByDay: '2257', typeCounter: 'Likes'},
+      { type: 'instagram', likesCount: '52k', likesByDay: '1375', typeCounter: 'Profile Views'},
+      { type: 'twitter', likesCount: '117', likesByDay: '303', typeCounter: 'Retweets'},
+      { type: 'twitter', likesCount: '507', likesByDay: '553', typeCounter: 'Likes'},
+      { type: 'youtube', likesCount: '107', likesByDay: '-19', typeCounter: 'Likes'},
+      { type: 'youtube', likesCount: '1407', likesByDay: '-12', typeCounter: 'Total Views'},
     ]
   }
 }
