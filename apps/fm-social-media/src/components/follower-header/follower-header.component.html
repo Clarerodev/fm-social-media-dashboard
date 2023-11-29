@@ -3,7 +3,7 @@
         <h2 [ngClass]="theme">Social Media Dashboard</h2>
         <p class="subtitle">Total Followers: 23,004</p>
     </div>
-    <div>
+    <div class="follower-header__switch-container" [ngClass]="theme">
         <fm-switch (checkedTheme)="setTheme($event)"></fm-switch>
     </div>
 </div>

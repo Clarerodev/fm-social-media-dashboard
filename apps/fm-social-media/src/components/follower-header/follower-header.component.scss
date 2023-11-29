@@ -1,5 +1,21 @@
 .follower-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @media screen and (min-width: (48em)) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.follower-header__switch-container {
+    border-top: 1px solid #848BAB;
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+
+    @media screen and (min-width: (48em)) { 
+        border: none;
+    }
+
+    &.dark {
+        border-color: #333A55;
+    }
 }
