@@ -18,7 +18,7 @@
 
   <!-- Difficulty -->
   <a href="https://www.frontendmentor.io/challenges?difficulties=1"  target="_blank">
-    <img src="https://img.shields.io/badge/Difficulty-Newbie-aquamarine" alt="Challenge Difficulty - Junior">
+    <img src="https://img.shields.io/badge/Difficulty-Junior-aquamarine" alt="Challenge Difficulty - Junior">
   </a>
 </div>
 <br />
@@ -31,21 +31,26 @@
 <br />
 
 ## **The challenge**
-THE challenge is to build out this early access landing page and get it looking as close to the design as possible.
+The challenge is to build out this Social Media Dashboard and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 Your users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
-- Receive an error message when the form is submitted if:
-  - The `Email address` field is empty should show "Oops! Please add your email"
-  - The email is not formatted correctly should show "Oops! Please check your email"
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Toggle color theme to their preference
+
 <br />
 
 ## **Built With**
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?logo=html5&logoColor=white)   
+![Angular](https://img.shields.io/badge/angular-red.svg?logo=angular&logoColor=white)   
 ![SASS](https://img.shields.io/badge/sass-pink.svg?logo=SASS&logoColor=white&color=pink)<br>
-![TypeScript](https://img.shields.io/badge/TypeScript-yellow.svg?logo=typescript&logoColor=white&color=blue)<br>
 ![Nx](https://img.shields.io/badge/Nx-blue.svg?logo=nX&logoColor=white&color=darkblue)
+
+
+## **Implement**
+
+<a href="https://github.com/Clarerodev/fm-web-components"  target="_blank">
+       FM We componentes - Github Repo 
+</a>
