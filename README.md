@@ -54,3 +54,18 @@ Your users should be able to:
 <a href="https://github.com/Clarerodev/fm-web-components"  target="_blank">
        FM We componentes - Github Repo 
 </a>
+<br />
+<br />
+
+## **Frontend Architecture**
+<img src="https://github.com/Clarerodev/fm-social-media-dashboard/assets/6628174/a3be8966-a5b3-4017-a6dc-8627cd2edf46" alt="frontendmentor" width="300" height="420">
+<br />
+<br />
+This Project is a mono-repo Angular with two Angular projects, <b>Apps/fm-social-media</b> and and Angular Library <b>lib-fm-web-components</b>.
+<br />
+<br />
+
+- <b>Apps/fm-social-media</b> is the web page that is using angular library components. This is the container page.<br />
+- <b>lib-fm-web-components</b> is a library angular project that is in charge of get web components from <b>fm-web-components</b> npm package and expose it into an angular web component to use in the workspace.
+<br />
+This project is using a npm package project that is located in github registry <b>fm-web-components</b>, you'll find it in <a href="https://github.com/Clarerodev/fm-web-components"  target="_blank"> FM We componentes - Github Repo.
