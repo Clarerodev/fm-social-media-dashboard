@@ -3,7 +3,7 @@
   <br />
   <h2 align="center">
    <a href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"  target="_blank">
-        Social Media Dasboard - Frontend Mentor Challenge
+        Social Media Dashboard - Frontend Mentor Challenge
     </a>
   </h2>
 </div>
