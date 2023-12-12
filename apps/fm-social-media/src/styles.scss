@@ -2,3 +2,7 @@
 @use "./assets/styles/variables";
 @use "./assets/styles/typography";
 @use "./assets/styles/utils";
+
+body:has(.dark) {
+    background: var(--bg-dark-color-secondary);
+}

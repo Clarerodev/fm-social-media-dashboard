@@ -1,8 +1,9 @@
 <section class="follower-dashboard">
-    <div class="follower-dashboard--item" *ngFor="let item of followerData">
-        <fm-social-media-followers-lib *ngIf="followerData"
-            [followerData]="item"
-            [theme]="theme">
-        </fm-social-media-followers-lib>
-    </div>
+    <h2 class="sr-only">Dashboard</h2>
+    <div class="follower-dashboard--content">
+        <div class="follower-dashboard--item" *ngFor="let item of followerData">
+            <fm-social-media-followers-lib *ngIf="followerData" [followerData]="item" [theme]="theme">
+            </fm-social-media-followers-lib>
+        </div>
+   </div>
 </section>

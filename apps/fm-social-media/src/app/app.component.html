@@ -1,6 +1,14 @@
-<div class="container" [ngClass]="theme">
+
+<header role="banner">
     <h1 class="sr-only">Social media dashboard</h1>
+</header>
+<main role="main" class="container" [ngClass]="theme">
     <div class="container--content">
         <fm-followers (setThemeEvent)="setTheme($event)"></fm-followers>
     </div>
-</div>
+</main>
+<footer>
+    <span class="sr-only">
+        Created By ClareRodri
+    </span>
+</footer>

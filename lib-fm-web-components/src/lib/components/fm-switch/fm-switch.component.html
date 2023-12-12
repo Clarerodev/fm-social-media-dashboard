@@ -1,7 +1,7 @@
 <div class="fm-switch__container">
-    <label class="fm-switch-theme">{{themeSelected}} Mode</label>
-    <label class="fm-switch">
-        <label for="swith-check" class="sr-only">switch checker to change color mode</label>
+    <label class="fm-switch-theme" for="swith-check">{{themeSelected}} Mode</label>
+    <label class="fm-switch" for="swith-check" [ngClass]="themeSelected">
+        <label for="swith-check" class="sr-only">switch checker to change background color</label>
         <input id="swith-check" class="fm-switch__input" type="checkbox" role="switch" [checked]="elChecked"
             (change)="onChangeTheme($event)" />
         <span class="fm-switch__slider"></span>

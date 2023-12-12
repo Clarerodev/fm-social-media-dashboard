@@ -1,7 +1,8 @@
 .fm-switch__container {
     --bg-color-light-switch: #fff;
     --bg-color-light-switch-circle: #AEB3CB;
-    --bg-color-dark-switch: #AEB3CB;
+    --bg-color-dark-switch: #8C98C6;
+    --bg-color-dark-switch---hover: #AEB3CB;
     --bg-color-dark-switch-circle: #252B42;
 
     & {
@@ -19,9 +20,14 @@
 .fm-switch-theme {
     text-transform: capitalize;
     margin-right: 0.813rem;
-    color: var(--bg-color-dark-switch);
     font-size: 0.875rem;
+    color: var(--bg-color-dark-switch);
+
+    &:has(+ .fm-switch.dark:hover) {
+        color: var(--bg-color-dark-switch---hover);
+    }
 }
+
 .fm-switch {
     position: relative;
     display: inline-block;
@@ -35,30 +41,18 @@
     height: 0;
 }
 
+.fm-switch.light {
+    .fm-switch__slider:hover {
+        @extend .fm-switch--dark-bg;
+    }
+}
+
 .fm-switch__slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(225deg, #40DB82 0%, #388FE7 98.02%);
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 34px;
+    @extend .fm-switch--dark-bg;
 }
 
 .fm-switch__slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 2.5px;
-    bottom: 3px;
-    background: var(--bg-color-dark-switch-circle);
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 50%;
+    @extend .fm-switch--dark-bg--circle;
 }
 
 input:checked+.fm-switch__slider {
@@ -75,3 +69,28 @@ input:checked+.fm-switch__slider:before {
     transform: translateX(1.5rem);
 }
 
+.fm-switch--dark-bg {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(225deg, #40DB82 0%, #388FE7 98.02%);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.fm-switch--dark-bg--circle {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2.5px;
+    bottom: 3px;
+    background: var(--bg-color-dark-switch-circle);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}

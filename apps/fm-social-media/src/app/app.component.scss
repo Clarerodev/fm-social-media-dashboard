@@ -27,7 +27,6 @@
 }
 
 .container.dark {
-    background: var(--bg-dark-color-secondary);
     &::before {
         content: "";
         position: absolute;
